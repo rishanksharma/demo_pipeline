@@ -2,17 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
+        /*stage('Clone') {
             steps {
                 git 'https://github.com/rishanksharma/demo_pipeline.git'
             }
-        }
-        /*stage('Build') {
+        }*/
+        stage('Build') {
             steps {
                 dir('demo'){
                 sh 'mvn clean install'
                 }
             }
-        }*/
+        }
     }
 }
